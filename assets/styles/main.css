@@ -1,0 +1,75 @@
+/* General Layout Reset */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  text-align: left;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Full width */
+  padding: 40px;
+  height: auto; /* Auto height to fit content */
+}
+
+/* Text Area */
+.text-area {
+  width: 60%; /* 60% for text area */
+}
+
+.text-area h1 {
+  width: 100%;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Poppins, sans-serif;
+  font-size: 64px; /* Adjusted size to better fit the layout */
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.text-area p {
+  font-size: 16px;
+  text-align: start;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Image Area */
+.image-area {
+  width: 40%; /* 40% for image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-area img {
+  max-width: 100%;
+  height: auto; /* Ensures image is responsive */
+}
+
+/* Typography */
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+
+li {
+  list-style-type: none;
+}

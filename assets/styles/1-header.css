@@ -1,0 +1,86 @@
+/* Header */
+header {
+  background-color: transparent;
+  height: 90px;
+  width: 100%;
+  position: fixed; /* Keep it fixed at the top */
+  top: 0;
+  display: flex;
+  justify-content: space-between; /* Space between logo and buttons */
+  align-items: center; /* Vertically center the logo and buttons */
+  padding: 0 20px; /* Add padding for left and right spacing */
+  z-index: 10; /* Ensure the header is above other content */
+}
+
+/* Logo */
+header .logo {
+  background-image: url("/projectassets/images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 242px;
+  height: 90px;
+  flex-shrink: 0;
+}
+
+/* Button Container */
+.btn-align {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Button Styles */
+.btn, .btn-gs {
+  background-color: #FF5F00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 4px 33px;
+  margin: 0 10px; /* Adjusted margin for spacing */
+  font-weight: 500;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover Effects */
+.btn:hover, .btn-gs:hover {
+  background-color: black;
+}
+
+/* Adjust .btn-gs with linear gradient */
+.btn-gs {
+  border: 1px solid #dfe2e5;
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 30px;
+  background: linear-gradient(101deg, #3431D0 8%, #FF5F00 101.36%);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Make header content stack vertically */
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  
+  /* Make buttons full width and center them */
+  .btn-align {
+    flex-direction: column;
+    width: 100%; /* Take up full width of the screen */
+    gap: 15px; /* Increase spacing between buttons */
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  /* Full width buttons */
+  .btn, .btn-gs {
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px 0;
+    text-align: center; /* Center the text inside the button */
+  }
+}
