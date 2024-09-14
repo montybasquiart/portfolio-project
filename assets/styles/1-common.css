@@ -1,32 +1,22 @@
-/*
-  ========================================
-  Grid
-  ========================================
-*/
-
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    max-height: max-content;
-    color: #000;
-    font-size: 14px;
-    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+body {
+  padding: 0;
+  padding-bottom: 60px;
+  margin: 0;
+  overflow: auto;
+  color: #000;
+  font-size: 14px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 div {
     max-width: 500px;
     margin: auto;
-
-
 }
 
 .container{
@@ -61,14 +51,13 @@ p {
 }
 
 .hero {
-    padding: 22px 80px 66px 80px;
-  }
+    padding: 20px 80px 66px;
+    
+}
 
 
 /*
-  ========================================
   Buttons
-  ========================================
 */
 
 .btn {
@@ -86,10 +75,25 @@ p {
     white-space: nowrap;
     user-select: none;
     padding: 10px 30px;
-    color: #fff;
-    float: right;
+    color: #fff; 
+  }
 
-   
+  .btn-login {
+    background-color: #000;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    user-select: none;
+    padding: 10px 30px;
+    color: #fff;
   }
   .btn-alt {
     border: 1px solid #dfe2e5;
@@ -101,6 +105,20 @@ p {
 
     .btn:hover {
         background-color: rgb(7, 7, 7);
+        color: #fff;
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+
+    }
+    .btn-login:hover {
+        background-color: #F50;
+        color: #fff;
+        transition: 0.3s;
+        transtion-timing-function: ease-in-out;
+
+    }
+    .btn-login, .btn:active {
+        background-color: rgb(98, 33, 0);
         color: #fff;
     }
 
@@ -117,56 +135,45 @@ p {
     flex: 1;
     padding: 20px;
     width: 100%;
-    height: max-content;
-
-
+    height: auto;
   }
+  
   .landing__page {
-    display: flexbox;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 100%;
-
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 100%;
   }
-  .image__size {
-    display: flex;
-    float: right;
-    margin-bottom: 0;
-    height: 760px;
-    max-width: 50%;
 
+  .image__size {
+      display: flex;
+      margin-bottom: 0;
+      height: 760px;
+      max-width: 50%;
   }
 
   .text__area {
-    display: block;
-    position: relative;
-    float: left;
-    margin-bottom: 0;
-    height: 760px;
-    max-width: 50%;
-    justify-content: start;
-    align-items: start;
-  
+      display: block;
+      position: relative;
+      margin-bottom: 0;
+      height: 760px;
+      max-width: 50%;
   }
+
   .text__area button {
-    display: block;
-    position: relative;
-    float: left;
-    margin-bottom: 0;
-    justify-content: start;
-    align-items: start;
-  
+      display: block;
+      position: relative;
+      float: left;
+      margin-bottom: 0;
   }
 
   img {
-    display: block;
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: right;
-
+      display: block;
+      width: 100%;
+      height: auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center right;
   }
   
   /* Optional: Add media query for smaller screens */

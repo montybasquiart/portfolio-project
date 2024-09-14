@@ -7,19 +7,28 @@
         <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/7.0.0/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
         <link rel="stylesheet" href="/assets/styles/1-header.css">
-        <link rel="stylesheet" href="/assets/styles/2-footer.css">
+        <link rel="stylesheet" href="/assets/styles/2-common.css">
         <title>Get Started</title>
     </head>
     </head>
     <body>
-        <section>
-            <div>
-                <h1>
-
-                </h1>
+        <section class="container">
+            <div class="student__container">
+                <img class="logo" src="/assets/images/logo.png" alt="#">
+                <h2>
+                    First, enter your email or alx student code.
+                </h2>
                 <p>
-
+                    We suggest you use your existing <br> alx email address.
                 </p>
+                <div class="student__email">
+<form action="/action_page.php">
+    <label for="email">Enter your email</label><br>
+    <input type="text" id="my__email" name="my__email" value="Enter valid student ID or email address"><br>
+    <input type="submit" value="Continue">
+
+</form>
+                </div>
             </div>
         </section>
     </body>
