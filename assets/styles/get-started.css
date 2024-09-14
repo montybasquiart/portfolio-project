@@ -1,0 +1,31 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    color: #000;
+    font-size: 14px;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.text__center {
+    text-align: center !important;
+}
+
+@media (min-width: 1012px) {
+    .p__responsive {
+        padding-right: var(--base-size-16) !important;
+        padding-left: var(--base-size-16) !important;
+    }
+}

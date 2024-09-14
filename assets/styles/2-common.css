@@ -1,13 +1,3 @@
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;  
-}
 
 section {
     display: block;
@@ -45,6 +35,5 @@ h2 {
     height: 150px;
     border: 1px solid red;
     align-items: center;
-
     justify-content: center;
 }
